@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 20px;
+    background-color: black;
+
+}
+
+.overlay {
+    width: 70%;
+    margin: 0 auto;
+    background: url('../Assets/pexels-bri-schneiter-28802-346529.jpg') no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10%
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.search-bar {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+    font-family: sans-serif;
+    color: #FFF;
+    border-bottom: 1px solid white;
+}
+
+::placeholder {
+    color: #ddd;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cities-name p {
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20%;
+    margin-left: 20px;
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.icon {
+    color: orange;
+    animation: loop 7s linear infinite;
+}
+
+@keyframes loop {
+    100% {
+        transform: rotate(360deg);
+    }
+}
